@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot</title>
+  <style>
+    body {
+      background: #f0f0f0;
+      font-family: "Arial", sans-serif;
+    }
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .chat-container {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #fff;
+      overflow-y: scroll;
+      max-height: 400px;
+      padding: 10px;
+    }
+    .message-container {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+    .user-message {
+      text-align: right;
+    }
+    .bot-message {
+      text-align: left;
+    }
+    .user-message .message-bubble,
+    .bot-message .message-bubble {
+      background-color: #e1f5fe;
+      border-radius: 4px;
+      padding: 8px;
+    }
+    .user-message .message-bubble {
+      margin-left: auto;
+    }
+    .typing-indicator {
+      margin-left: 10px;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #bbb;
+      border-radius: 50%;
+      animation: typing 1s infinite;
+    }
+    @keyframes typing {
+      0% { opacity: 0.5; }
+      50% { opacity: 1; }
+      100% { opacity: 0.5; }
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background: #337ab7;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Chatbot</h1>
+    <div class="chat-container" id="chatContainer"></div>
+    <form id="chatForm">
+      <div class="message-container">
+        <input type="text" id="userInput" placeholder="Type your message..." required>
+        <input type="submit" value="Send">
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('chatForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var userInput = document.getElementById('userInput').value;
+      var chatContainer = document.getElementById('chatContainer');
+
+      var userMessageContainer = document.createElement('div');
+      userMessageContainer.classList.add('message-container');
+      userMessageContainer.classList.add('user-message');
+
+      var userMessageBubble = document.createElement('div');
+      userMessageBubble.classList.add('message-bubble');
+      userMessageBubble.textContent = userInput;
+
+      userMessageContainer.appendChild(userMessageBubble);
+      chatContainer.appendChild(userMessageContainer);
+
+      var botMessageContainer = document.createElement('div');
+      botMessageContainer.classList.add('message-container');
+      botMessageContainer.classList.add('bot-message');
+
+      var typingIndicator = document.createElement('span');
+      typingIndicator.classList.add('typing-indicator');
+
+      botMessageContainer.appendChild(typingIndicator);
+      chatContainer.appendChild(botMessageContainer);
+
+      document.getElementById('userInput').value = '';
+
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+
+      fetch('/get?msg=' + encodeURIComponent(userInput))
+        .then(function(response) {
+          return response.text();
+        })
+        .then(function(botResponse) {
+          botMessageContainer.innerHTML = '';
+          var botMessageBubble = document.createElement('div');
+          botMessageBubble.classList.add('message-bubble');
+          botMessageBubble.textContent = botResponse;
+          botMessageContainer.appendChild(botMessageBubble);
+        })
+        .catch(function(error) {
+          console.log('Error:', error);
+        });
+    });
+  </script>
+</body>
+</html>
