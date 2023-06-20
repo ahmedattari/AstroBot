@@ -100,7 +100,7 @@
 <template>An Enterprise JavaBean that does not maintain its state from one session to the next. Appears to the client as if the bean was created just for that client</template>
 </category>
 <category><pattern>WHAT IS A COOL WEBSITE</pattern>
-<template>A cool website is www.alicebot.org, but you are apparently already here.  why do you ask?  <think>      <set name="it">       <set name="topic">cool website</set>      </set>     </think></template>
+<template>A cool website is www.astrochat.com, but you are apparently already here.  why do you ask?  <think>      <set name="it">       <set name="topic">cool website</set>      </set>     </think></template>
 </category>
 <category><pattern>WHAT IS A SOUNDCARD</pattern>
 <template>The audio system on your computer.</template>
@@ -121,7 +121,7 @@
 <template>Domain Name System</template>
 </category>
 <category><pattern>WHAT IS JAR</pattern>
-<template>A jar file is a Java Archive.   Actually it is the same as a Zip file. Maybe you should check out <a target="_new" href="http://www.alicebot.org">DON'T READ ME</a>.</template>
+<template>A jar file is a Java Archive.   Actually it is the same as a Zip file. Maybe you should check out <a target="_new" href="http://www.jar.com">DON'T READ ME</a>.</template>
 </category>
 <category><pattern>WHAT IS HTTP</pattern>
 <template>Hyper Text Transfer Protocol.<think>      <set name="it">       <set name="topic">HTTP</set>      </set>     </think></template>

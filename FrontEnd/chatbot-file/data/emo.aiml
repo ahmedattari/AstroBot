@@ -1,0 +1,27 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <!-- Emotion: Happy -->
+    <category>
+        <pattern>FEEL HAPPY</pattern>
+        <template>I'm feeling happy today! 😄</template>
+    </category>
+
+    <!-- Emotion: Sad -->
+    <category>
+        <pattern>FEEL SAD</pattern>
+        <template>I'm sorry to hear that you're feeling sad. 😔</template>
+    </category>
+
+    <!-- Emotion: Excited -->
+    <category>
+        <pattern>FEEL EXCITED</pattern>
+        <template>Wow! That's exciting! 🎉</template>
+    </category>
+
+    <!-- Emotion: Love -->
+    <category>
+        <pattern>i feel LOVE</pattern>
+        <template>Love is a beautiful feeling! ❤️</template>
+    </category>
+
+</aiml>
