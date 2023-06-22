@@ -72,7 +72,7 @@ const ChatWindow = () => {
   }, [name]);
 
   return (
-    <div className="container">
+    <div className="chat-window-container">
       <img className="svg" src={logo} alt="Logo" />
       <div className="chat-container" ref={chatContainerRef} id="chatContainer">
         {conversation.map((message, index) => (
@@ -99,5 +99,4 @@ const ChatWindow = () => {
     </div>
   );
 };
-
 export default ChatWindow;

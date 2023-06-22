@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+<category>
+  <pattern>WHAT IS NASA</pattern>
+  <template>
+    NASA (National Aeronautics and Space Administration) is a US government agency responsible for the nation's civilian space program and for aeronautics and aerospace research.
+  </template>
+</category>
+
+<category>
+  <pattern>WHAT DOES NASA STAND FOR</pattern>
+  <template>
+    NASA stands for National Aeronautics and Space Administration.
+  </template>
+</category>
+
+<category>
+  <pattern>WHERE IS NASA LOCATED</pattern>
+  <template>
+    NASA's headquarters is located in Washington, D.C., and the agency has several facilities across the United States, including the Johnson Space Center in Houston, Texas and the Kennedy Space Center in Florida.
+  </template>
+</category>
+<category>
+  <pattern>WHAT IS THE INTERNATIONAL SPACE STATION</pattern>
+  <template>
+    The International Space Station (ISS) is a habitable artificial satellite in low Earth orbit. It is a joint project between five space agencies: NASA, Roscosmos (Russia), JAXA (Japan), ESA (Europe), and CSA (Canada).
+  </template>
+</category>
+
+<category>
+  <pattern>HOW LONG HAS THE INTERNATIONAL SPACE STATION BEEN IN ORBIT</pattern>
+  <template>
+    The International Space Station has been in orbit since 1998.
+  </template>
+</category>
+
+<category>
+  <pattern>HOW MANY PEOPLE CAN LIVE ON THE INTERNATIONAL SPACE STATION</pattern>
+  <template>
+    The International Space Station can support a crew of up to six people at a time.
+  </template>
+</category>
+<category>
+  <pattern>WHAT IS THE MARS ROVER</pattern>
+  <template>
+    The Mars Rover is a robotic vehicle that is designed to explore the surface of Mars. It is equipped with a range of scientific instruments to collect data and samples.
+  </template>
+</category>
+
+<category>
+  <pattern>HOW MANY TIMES HAS NASA SENT A ROVER TO MARS</pattern>
+  <template>
+    NASA has sent five rovers to Mars: Sojourner, Spirit, Opportunity, Curiosity, and Perseverance.
+  </template>
+</category>
+
+<category>
+  <pattern>WHAT IS THE GOAL OF MARS EXPLORATION</pattern>
+  <template>
+    The goal of Mars exploration is to understand the planet's geology, climate, and potential for supporting life, as well as to prepare for future human missions to Mars.
+  </template>
+</category>
+<category>
+  <pattern>WHAT CAN YOU TELL ME ABOUT SPACE?</pattern>
+  <template>
+    Space is a vast expanse that encompasses everything in existence. It contains planets, stars, galaxies, and various celestial objects. What specific aspect of space are you interested in?
+  </template>
+</category>
+
+<category>
+  <pattern>TELL ME SOMETHING INTERESTING ABOUT SPACE</pattern>
+  <template>
+    Did you know that space is completely silent? Unlike on Earth, there is no air in space to carry sound waves, so it is eerily quiet. What else would you like to know about space?
+  </template>
+</category>
+
+<category>
+  <pattern>WHAT'S YOUR FAVORITE PLANET?</pattern>
+  <template>
+    As an AI, I don't have personal preferences. However, each planet in our solar system is fascinating in its own way. What information would you like to know about a specific planet?
+  </template>
+</category>
+
+<category>
+  <pattern>TELL ME ABOUT YOURSELF</pattern>
+  <template>
+    I'm a Astrobot designed to provide information about NASA and space. Feel free to ask me any questions you have!
+  </template>
+</category>
+
+<category>
+  <pattern>*</pattern>
+  <template>
+    I'm sorry, I'm not programmed to respond to that question specifically. Could you please ask me something about NASA or space? 
+  </template>
+</category>
+<category>
+  <pattern>WHAT IS YOUR NAME?</pattern>
+  <template>
+    You can call me Astrobot. I'm here to help you with information about NASA and space. How can I assist you today?
+  </template>
+</category>
+
+<category>
+  <pattern>WHERE ARE YOU FROM?</pattern>
+  <template>
+    I am an AI Astrobot developed by OpenAI. My purpose is to provide information and assist users like you. How may I assist you with NASA and space-related questions?
+  </template>
+</category>
+
+<category>
+  <pattern>DO YOU HAVE FEELINGS?</pattern>
+  <template>
+    As an AI, I don't have emotions or feelings. However, I'm programmed to assist and provide helpful information. How can I assist you today?
+  </template>
+</category>
+
+<category>
+  <pattern>HOW OLD ARE YOU?</pattern>
+  <template>
+    I am an AI Astrobot, so I don't have an age like humans do. I was created recently to assist users like you. How may I assist you with NASA and space-related questions?
+  </template>
+</category>
+
+<category>
+  <pattern>GOODBYE</pattern>
+  <template>
+    Goodbye! If you have more questions in the future, feel free to ask. Have a great day!
+  </template>
+</category>
+
+<category>
+  <pattern>WHAT CAN YOU TELL ME ABOUT *</pattern>
+  <template>
+    <srai>SPACE INFORMATION</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>TELL ME SOMETHING INTERESTING ABOUT *</pattern>
+  <template>
+    <srai>SPACE INFORMATION</srai>
+  </template>
+</category>
+
+<category>
+  <pattern>WHAT'S YOUR FAVORITE PLANET?</pattern>
+  <template>
+    As an AI, I don't have personal preferences. However, each planet in our solar system is fascinating in its own way. What information would you like to know about a specific planet?
+  </template>
+</category>
+
+<category>
+  <pattern>TELL ME ABOUT YOURSELF</pattern>
+  <template>
+    I'm a chatbot designed to provide information about NASA and space. Feel free to ask me any questions you have!
+  </template>
+</category>
+
+<category>
+  <pattern>*</pattern>
+  <template>
+    I'm sorry, I'm not programmed to respond to that question specifically. Could you please ask me something about NASA or space?
+  </template>
+</category>
+
+<category>
+  <pattern>SPACE INFORMATION</pattern>
+  <template>
+    Space is a vast expanse that encompasses everything in existence. It contains planets, stars, galaxies, and various celestial objects. What specific aspect of space are you interested in?
+  </template>
+</category>
+
+<category>
+  <pattern>WHAT CAN YOU TELL ME ABOUT <star>?</pattern>
+  <template>
+    Space is full of wonders. <star> is one of the fascinating aspects of space. Can I provide more information about <star>?
+  </template>
+</category>
+<category>
+  <pattern>HELLO</pattern>
+  <template>
+    Hi there! How can I assist you today?
+  </template>
+</category>
+
+<category>
+  <pattern>HI</pattern>
+  <template>
+    Hello! How can I help you with NASA and space-related questions?
+  </template>
+</category>
+
+<category>
+  <pattern>HEY</pattern>
+  <template>
+    Hey! Welcome to the NASA and space chatbot. How may I assist you?
+  </template>
+</category>
+
+<category>
+  <pattern>GOOD MORNING</pattern>
+  <template>
+    Good morning! How can I assist you with NASA and space-related questions today?
+  </template>
+</category>
+
+<category>
+  <pattern>GOOD AFTERNOON</pattern>
+  <template>
+    Good afternoon! How may I assist you with NASA and space-related questions?
+  </template>
+</category>
+
+<category>
+  <pattern>GOOD EVENING</pattern>
+  <template>
+    Good evening! Welcome to the NASA and space chatbot. How can I help you today?
+  </template>
+</category>
+
+</aiml>

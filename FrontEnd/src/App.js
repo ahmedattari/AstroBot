@@ -1,15 +1,12 @@
-// import React from 'react';
+import React from 'react';
 // import LoginForm from './LoginForm';
-// import ChatWindow from './ChatWindow';
-import Brain from './brain'
-
+import ChatWindow from './ChatWindow';
 
 const App = () => {
 return (
   <div>
     {/* <LoginForm /> */}
-    {/* <ChatWindow /> */}
-    <Brain/>
+    <ChatWindow />
   </div>
 );
 };
