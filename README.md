@@ -11,35 +11,15 @@ Astrobot: Discover the universe, NASA projects, stars, and planets with this int
 
 1\. Importing Dependencies:
 
-●
-
-●
-
 Flask: A micro web framework for creating the chatbot API.
 
-aiml: A Python library for creating and parsing AIML ﬁles, used for chatbot
-
-responses.
-
-●
-
-●
-
-●
+aiml: A Python library for creating and parsing AIML ﬁles, used for chatbot responses.
 
 autocorrect: A library for autocorrecting words.
 
 os: A module for interacting with the operating system.
 
-flask\_cors: A Flask extension for handling Cross-Origin Resource Sharing
-
-(CORS).
-
-●
-
-●
-
-●
+flask\_cors: A Flask extension for handling Cross-Origin Resource Sharing (CORS).
 
 nltk: The Natural Language Toolkit library.
 
@@ -49,23 +29,11 @@ bs4 (BeautifulSoup): A library for parsing HTML and XML.
 
 2\. Downloading NLTK Resources:
 
-●
+nltk.download('punkt'): Downloads the necessary resources for tokenization using NLTK.
 
-nltk.download('punkt'): Downloads the necessary resources for
-
-tokenization using NLTK.
-
-●
-
-nltk.download('wordnet'): Downloads WordNet, a lexical database for
-
-English.
+nltk.download('wordnet'): Downloads WordNet, a lexical database for English.
 
 3\. Initializing Flask and CORS:
-
-●
-
-●
 
 app = Flask(\_\_name\_\_): Creates a Flask application.
 
@@ -73,61 +41,31 @@ CORS(app): Enables CORS for the Flask application.
 
 4\. Loading AIML Kernel:
 
-●
-
 BRAIN\_FILE: The ﬁle path for the AIML kernel brain dump.
 
-● Checking if the brain ﬁle exists and loading it if it does. Otherwise, parsing
-
-AIML ﬁles and saving the brain ﬁle.
+Checking if the brain ﬁle exists and loading it if it does. Otherwise ,parsing AIML ﬁles and saving the brain ﬁle.
 
 5\. Website Scraping Function:
 
-
-
 <a name="br2"></a> 
-
-●
 
 scrape\_website(): Scrapes the speciﬁed URL and returns the scraped
 
 HTML content.
 
-6\. API Endpoint:
-
-●
-
-/get with GET method: Handles the API endpoint for receiving user input
-
-and returning chatbot responses.
-
-●
+6\. API Endpoint:/get with GET method: Handles the API endpoint for receiving user input and returning chatbot responses.
 
 user\_input: Retrieves the user input from the request's query parameters.
 
-● Tokenizes the user input using NLTK, applies autocorrection to each token,
+Tokenizes the user input using NLTK, applies autocorrection to each token ,and joins them back into a sentence.
 
-and joins them back into a sentence.
+WordNet Synonym Replacement: Iterates over each token in the user input, ﬁnds synonyms using WordNet, and updates the question with joined synonyms if any are found.
 
-● WordNet Synonym Replacement: Iterates over each token in the user input,
+Passes the updated question to the AIML kernel to get the chatbot's response.If the response is empty, it falls back to web scraping.
 
-ﬁnds synonyms using WordNet, and updates the question with joined
-
-synonyms if any are found.
-
-● Passes the updated question to the AIML kernel to get the chatbot's
-
-response.
-
-● If the response is empty, it falls back to web scraping.
-
-● Returns the chatbot's response as a JSON object.
+Returns the chatbot's response as a JSON object.
 
 7\. Running the Application:
-
-●
-
-●
 
 if \_\_name\_\_ == '\_\_main\_\_':: Checks if the script is being run directly.
 
@@ -151,9 +89,7 @@ the speciﬁed host and port.
 
 **Chatbot Frontend**
 
-This project implements a chatbot frontend using React and integrates
-
-it with a Flask API for handling chatbot interactions.
+This project implements a chatbot frontend using React and integrates it with a Flask API for handling chatbot interactions.
 
 **Project Structure**
 
